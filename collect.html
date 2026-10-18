@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gusheshe Spinning/Collection</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"> Gusheshe <span>Spinning<span> </a>
+				<button class="navbar-toggler"
+				        type="button"
+				        data-bs-toggle="collapse"
+				        data-bs-target="#menu"
+				        arial-label="Open menu">
+
+				        <span class="navbar-toggler-icon"></span>
+
+					
+
+
+
+				</button>
+
+			    <div class="collapse navbar-collapse" id="menu">
+			    	<ul class="navbar-nav ms-auto">
+			    		<li class="nav-item">
+			    			<a class="nav-link" href="index.html"> Home </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link " href="spots.html"> Spots </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link active" href="collect.html"> Collection </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link" href="gallery.html"> Gallery </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link" href="contact.html"> Contact </a>
+			    			<li class="nav-item">
+			    			<button id="mode" class="btn btn-outline-danger btn-sm ms-lg-3"> Dark Mode </button>
+
+		</nav>
+
+
+
+	</header>
+
+	<main>
+		<section class="page-title mt-5 pt-3">
+			<div class="container">
+				<h1> Local builts </h1>
+				<p > filter to find a place  </p>
+            
+            
+
+			</div>
+		</section>
+	<section>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-4 mb-4">
+						<select id="select" class="form-select">
+							<option value="All">All categories</option>
+                            <option value="Home-made">Home made</option>
+                            <option value="other">Other</option>
+                            
+						</select>
+						
+					</div>
+					
+				</div>
+				
+				<div class="row">
+
+                   <div class="col-md-4 mb-4 spot" data-category="Home-made">
+                    <div class="card h-100">
+              
+                     <img src="t4.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Thabure 2</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
+            </div>
+
+          </div>
+           <div class="col-md-4 mb-4 spot" data-category="other">
+                    <div class="card h-100">
+              
+                     <img src="5.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Seeisa E30</h3>
+                    <p>The legendary spinning machine that beat a lot of competitions built by Seeisa</p>
+                   
+               </div>
+            </div>
+
+				
+			</div>
+			 <div class="col-md-4 mb-4 spot" data-category="other">
+                    <div class="card h-100">
+              
+                     <img src="t6.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Lephois E30</h3>
+                    <p>The legendary E30 built by Mashapha workshop</p>
+                   
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 spot" data-category="Home-made">
+                    <div class="card h-100">
+              
+                     <img src="t3.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Thabure 4</h3>
+                    <p>The Fourth Home made car built by Mr Motlomelo</p>
+                   
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 spot" data-category="Home-made">
+                    <div class="card h-100">
+              
+                     <img src="t1.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Mokoko</h3>
+                    <p>The Third Home made car built by Mr Motlomelo</p>
+                   
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 spot" data-category="Home-made">
+                    <div class="card h-100">
+              
+                     <img src="t2.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Thabure 1</h3>
+                    <p>The First Home made car built by Mr Motlomelo</p>
+                   
+               </div>
+            </div>
+        </div>
+		</section>
+	</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+<footer class="mt-5"> 
+
+
+<div class="container">
+<p class="my-5">	Motor Sport Association Since 2004 </p>
+</div>
+</footer>
+</html>

@@ -1,160 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gusheshe Lesotho | Spin Spots</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gusheshe Spinning/Spots</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"> Gusheshe <span>Spinning<span> </a>
+				<button class="navbar-toggler"
+				        type="button"
+				        data-bs-toggle="collapse"
+				        data-bs-target="#menu"
+				        arial-label="Open menu">
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">GUSHESHE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Open menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="spots.html">Spin Spots</a></li>
-            <li class="nav-item"><a class="nav-link" href="stay.html">Accommodation</a></li>
-            <li class="nav-item"><a class="nav-link" href="photos.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="moreInfo.html">Contact / Book</a></li>
-            <li class="nav-item"><button id="themeBtn" class="btn btn-outline-warning btn-sm ms-lg-3" type="button">Dark mode</button></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>                                                                      
+				        <span class="navbar-toggler-icon"></span>
 
-  <main>
-    <section class="page-title">
-      <div class="container">
-        <h1>Spin Spots</h1>
-        <p class="mb-0">Search or filter to find a place.</p>
-      </div>
-    </section>
+					
 
-    <section>
-      <div class="container">
 
-        
-        <div class="row mb-4">
-          <div class="col-md-8 mb-2">
-            <label for="searchBox" class="visually-hidden">Search</label>
-            <input type="search" id="searchBox" class="form-control" placeholder="Search by name or place...">
-          </div>
-          <div class="col-md-4 mb-2">
-            <label for="filterSelect" class="visually-hidden">Category</label>
-            <select id="filterSelect" class="form-select">
-              <option value="All">All categories</option>
-              <option value="Street">Street</option>
-              <option value="Arena">Arena</option>
-              <option value="Open Ground">Open Ground</option>
-              <option value="Night">Night</option>
-            </select>
-          </div>
-        </div>
 
-        <div id="noResults" class="alert alert-warning" style="display:none">No spots found. Try another word.</div>
+				</button>
 
-        
-        <div class="row">
+			    <div class="collapse navbar-collapse" id="menu">
+			    	<ul class="navbar-nav ms-auto">
+			    		<li class="nav-item">
+			    			<a class="nav-link" href="index.html"> Home </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link active" href="spots.html"> Spots </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link" href="collect.html"> Collection </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link" href="gallery.html"> Gallery </a>
+			    			<li class="nav-item">
+			    			<a class="nav-link" href="contact.html"> Contact </a>
+			    			<li class="nav-item">
+			    			<button id="mode" class="btn btn-outline-danger btn-sm ms-lg-3"> Dark Mode </button>
 
-          <div class="col-md-4 mb-4 spot" data-category="Street">
-            <div class="card h-100">
+		</nav>
+
+
+
+	</header>
+
+	<main>
+		<section class="page-title mt-5 pt-3">
+			<div class="container">
+				<h1> Spin Spots </h1>
+				<p > Search or filter to find a place  </p>
+            
+            
+
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 mb-4">
+						<input type="Search" id="search" class="form-control" placeholder="Search by name........">
+					</div>
+					<div class="col-md-4 mb-4">
+						<select id="select" class="form-select">
+							<option value="All">All categories</option>
+                            <option value="Day">Day</option>
+                        
+                       
+                            <option value="Night">Night</option>
+						</select>
+						
+					</div>
+					
+				</div>
+				<div id="noResults" class="alert alert-warning" style="display:none">No spots found. Try another word.</div>
+				<div class="row">
+
+                   <div class="col-md-4 mb-4 spot" data-category="Day">
+                    <div class="card h-100">
               
-              <img src="spot.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Street</span>
-                <h3 class="h5 mt-2">Maseru City Strip</h3>
-                <p>Maseru. The capital's busiest meet-up.</p>
-                <p class="price">M150</p>
-              </div>
+                     <img src="red.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
             </div>
-          </div>
 
-          <div class="col-md-4 mb-4 spot" data-category="Night">
-            <div class="card h-100">
-          
-              <img src="img.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Night</span>
-                <h3 class="h5 mt-2">Maputsoe Open Ground</h3>
-                <p>Leribe. Wide space for donuts and group spins.</p>
-                <p class="price">M120</p>
-              </div>
+          </div>
+           <div class="col-md-4 mb-4 spot" data-category="Night">
+                    <div class="card h-100">
+              
+                     <img src="img.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
             </div>
-          </div>
 
-          <div class="col-md-4 mb-4 spot" data-category="Arena">
-            <div class="card h-100">
-            
-              <img src="im.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Arena</span>
-                <h3 class="h5 mt-2">Mafeteng Arena</h3>
-                <p>Mafeteng. Fenced arena with seats and marshals.</p>
-                <p class="price">M200</p>
-              </div>
+				
+			</div>
+			 <div class="col-md-4 mb-4 spot" data-category="Day">
+                    <div class="card h-100">
+              
+                     <img src="im.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 mb-4 spot" data-category="Night">
-            <div class="card h-100">
-            
-              <img src="images/ima.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Night</span>
-                <h3 class="h5 mt-2">Leribe Night Meet</h3>
-                <p>Leribe. After-dark spinning under floodlights.</p>
-                <p class="price">M180</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4 spot" data-category="Arena">
-            <div class="card h-100">
-          
-              <img src="imag.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Arena</span>
-                <h3 class="h5 mt-2">TY Practice Track</h3>
-                <p>Berea. A track where beginners learn safe spinning.</p>
-                <p class="price">M160</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4 spot" data-category="Open Ground">
-            <div class="card h-100">
-          
-              <img src="image.jpg" class="card-img-top" >
-              <div class="card-body">
-                <span class="badge text-bg-warning">Open Ground</span>
-                <h3 class="h5 mt-2">Mohale's Hoek Pan</h3>
-                <p>Mohale's Hoek. Relaxed Sunday spins with mountain views.</p>
-                <p class="price">M110</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="col-md-4 mb-4 spot" data-category="Day">
+                    <div class="card h-100">
+              
+                     <img src="gushe.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 spot" data-category="Night">
+                    <div class="card h-100">
+              
+                     <img src="ima.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 spot" data-category="Night">
+                    <div class="card h-100">
+              
+                     <img src="gus.jpg" class="card-img-top" >
+                    <div class="card-body">
+                
+                    <h3 class="h5 mt-2">Maseru City</h3>
+                    <p>Maseru. The capital's busiest meet-up.</p>
+                   
+               </div>
+            </div>
+        </div>
+		</section>
+	</main>
 
-  <footer>
-    <div class="container">
-      <p class="mb-1">Gusheshe Lesotho - Maseru, Lesotho</p>
-     
-    </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
+<footer class="mt-5"> 
+
+
+<div class="container">
+<p class="my-5">	Motor Sport Association Since 2004 </p>
+</div>
+</footer>
 </html>
